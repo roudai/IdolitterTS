@@ -3,6 +3,7 @@
     "@types/google-apps-script": "^1.0.59",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.58.0",
+    "dayjs": "^1.11.7",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-standard-with-typescript": "^34.0.1",
