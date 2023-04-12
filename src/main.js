@@ -1,4 +1,11 @@
-// eslint-disable-next-line no-unused-vars
-function test() {
-    postTweet('ツイートテスト')
+const idolSheet =
+    SpreadsheetApp.getActiveSpreadsheet().getSheetByName('アイドル一覧')
+const groupSheet =
+    SpreadsheetApp.getActiveSpreadsheet().getSheetByName('グループ一覧')
+
+function randomIdolTweet() {
+    if (dataSheet !== null) {
+        const generatePost = new GeneratePost(idolSheet)
+        generatePost.randomIdolTweet()
+    }
 }
