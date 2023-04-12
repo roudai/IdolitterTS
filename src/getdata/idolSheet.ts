@@ -6,11 +6,15 @@ const getIdolGroupName = (line: number): string => {
 }
 
 const getIdolName = (line: number): string => {
-    return (
-        idolSheet?.getRange(line, 2).getValue() +
-        ' ' +
-        idolSheet?.getRange(line, 3).getValue()
-    )
+    if (idolSheet?.getRange(line, 2).getValue() == '') {
+        return idolSheet?.getRange(line, 3).getValue()
+    } else {
+        return (
+            idolSheet?.getRange(line, 2).getValue() +
+            ' ' +
+            idolSheet?.getRange(line, 3).getValue()
+        )
+    }
 }
 
 const getIdolTwitterID = (line: number): string => {

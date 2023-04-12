@@ -1,9 +1,9 @@
 function randomIdolTweet() {
-    const generatePost = new GeneratePost(idolSheet, groupSheet)
-    generatePost.randomIdolTweet()
+    const idolTweet = new IdolTweet(idolSheet, groupSheet)
+    idolTweet.randomIdolTweet()
 }
 
 function randomGroupTweet() {
-    const generatePost = new GeneratePost(idolSheet, groupSheet)
-    generatePost.randomGroupTweet()
+    const groupTweet = new GroupTweet(idolSheet, groupSheet)
+    groupTweet.randomGroupTweet()
 }
