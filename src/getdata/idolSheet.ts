@@ -24,3 +24,7 @@ const getIdolTwitterID = (line: number): string => {
 const getIdolSchedule = (line: number): string => {
     return idolSheet?.getRange(line, 7).getValue()
 }
+
+const getLastRow = (): number => {
+    return Number(idolSheet?.getLastRow())
+}
