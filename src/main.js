@@ -12,3 +12,8 @@ function maintenanceSheets() {
     const maintenanceSheets = new MaintenanceSheets(idolSheet, groupSheet)
     maintenanceSheets.run()
 }
+
+function deleteIdol() {
+    const idolDelete = new IdolDelete(idolSheet)
+    idolDelete.deleteIdol()
+}
